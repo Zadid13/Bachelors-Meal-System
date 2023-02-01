@@ -3,6 +3,8 @@ using namespace std;
 int main(){
 
 double Imtiaz_entry,Zadid_entry, Mahi_entry, Mehraj_entry, Hasan_entry,  Total_Entry,  Imtiaz_Meal_Rate,Zadid_Meal_Rate,Mahi_Meal_Rate,Mehraj_Meal_Rate,Hasan_Meal_Rate,    Imtiaz_Meal, Zadid_Meal, Mahi_Meal, Mehraj_Meal, Hasan_Meal,      Total_Meal,   Average_Meal_Rate,   Cost,    Monthly_Remaining,    Monthly_Days;
+    
+    
     cout<<"Enter Imtiaz's Entry: "<<endl;
     cin>> Imtiaz_entry;
     cout<<"Enter Imtiaz's meal amount: "<<endl;
@@ -38,18 +40,26 @@ double Imtiaz_entry,Zadid_entry, Mahi_entry, Mehraj_entry, Hasan_entry,  Total_E
 Total_Entry=(Imtiaz_entry+Zadid_entry+Mahi_entry+Mehraj_entry+Hasan_entry);
 Total_Meal=(Imtiaz_Meal+Zadid_Meal+Mahi_Meal+Mehraj_Meal+Hasan_Meal);
 Average_Meal_Rate = (Cost/Total_Meal);
+Monthly_Remaining = (Total_Entry-Cost); 
+    
+    
 
 Imtiaz_Meal_Rate=(Average_Meal_Rate*Imtiaz_Meal);
 Zadid_Meal_Rate=(Average_Meal_Rate*Zadid_Meal);
 Mahi_Meal_Rate=(Average_Meal_Rate*Mahi_Meal);
 Mehraj_Meal_Rate=(Average_Meal_Rate*Mehraj_Meal);
 Hasan_Meal_Rate=(Average_Meal_Rate*Hasan_Meal);
+    
+    
 
 cout<<"Total Entry: "<<Total_Entry<<endl;
 cout<<"Total Meal: "<<Total_Meal<<endl;
 cout<<"Average Meal Rate: "<<Average_Meal_Rate<<endl;
+cout<<"Monthly Remaining Investment: "<<Monthly_Remaining<<endl;    
 cout<<endl;
 cout<<endl;
+    
+    
 cout<<"Imtiaz's Meal Rate: "<<Imtiaz_Meal_Rate<<endl;
 if(Imtiaz_Meal_Rate>Imtiaz_entry){
     cout<<"Imtiaz will invest: "<<(Imtiaz_Meal_Rate-Imtiaz_entry)<<"TK more"<<endl;
